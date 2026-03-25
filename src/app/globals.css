@@ -1,0 +1,104 @@
+@import "tailwindcss";
+
+@font-face {
+  font-family: "GangwonEdu Power";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("https://cdn.jsdelivr.net/gh/fonts-archive/GangwonEduPower/GangwonEduPower.woff2")
+      format("woff2"),
+    url("https://cdn.jsdelivr.net/gh/fonts-archive/GangwonEduPower/GangwonEduPower.woff")
+      format("woff");
+}
+
+@font-face {
+  font-family: "GangwonEdu Modu";
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: url("https://cdn.jsdelivr.net/gh/fonts-archive/GangwonEduModu/GangwonEduModu-Light.woff2")
+      format("woff2"),
+    url("https://cdn.jsdelivr.net/gh/fonts-archive/GangwonEduModu/GangwonEduModu-Light.woff")
+      format("woff");
+}
+
+@font-face {
+  font-family: "GangwonEdu Modu";
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("https://cdn.jsdelivr.net/gh/fonts-archive/GangwonEduModu/GangwonEduModu-Bold.woff2")
+      format("woff2"),
+    url("https://cdn.jsdelivr.net/gh/fonts-archive/GangwonEduModu/GangwonEduModu-Bold.woff")
+      format("woff");
+}
+
+:root {
+  --background: #f4f7f1;
+  --foreground: #17231d;
+  --card: #ffffff;
+  --card-muted: #eef4e8;
+  --line: #d8e4d2;
+  --primary: #4f8f62;
+  --primary-strong: #2f6b43;
+  --secondary: #f1c76a;
+  --accent: #d9eadb;
+  --danger: #c85f52;
+  --font-woom-display: "GangwonEdu Power";
+  --font-woom-body: "GangwonEdu Modu";
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-muted: var(--card-muted);
+  --color-line: var(--line);
+  --color-primary: var(--primary);
+  --color-primary-strong: var(--primary-strong);
+  --color-secondary: var(--secondary);
+  --color-accent: var(--accent);
+  --color-danger: var(--danger);
+  --font-display: var(--font-woom-display);
+  --font-body: var(--font-woom-body);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-woom-body), var(--font-geist-sans), sans-serif;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+button,
+input,
+select,
+textarea {
+  font: inherit;
+}
+
+::selection {
+  background: rgba(79, 143, 98, 0.18);
+}
+
+.font-woom-display {
+  font-family: var(--font-woom-display), var(--font-geist-sans), sans-serif;
+}
+
+.font-woom-body {
+  font-family: var(--font-woom-body), var(--font-geist-sans), sans-serif;
+}
